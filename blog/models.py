@@ -4,6 +4,19 @@ from django.utils import timezone
 from django.contrib.auth.models import User
 
 
+class Category(models.Model):
+	name = models.CharField(max_length=100)
+
+	def __str__(self):
+		return self.name
+
+
+class Tag(models.Model):
+	name = models.CharField(max_length=100)
+
+	def __str__(self):
+		return self.name
+
 class Article(models.Model):
 	title = models.CharField(max_length=100)
 	body = models.TextField()
@@ -15,11 +28,6 @@ class Article(models.Model):
 	tags = models.ManyToManyField(Tag,blank=True)
 	author = models.ForeignKey(User)
 
-
-class Category(models.Model):
-	name = models.CharField(max_length=100)
-
-
-class Tag(models.Model):
-	name = models.CharField(max_length=100)
+	def __str__(self):
+		return self.title
 

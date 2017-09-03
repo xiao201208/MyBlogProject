@@ -85,7 +85,6 @@ DATABASES = {
         #     'isolation_level':'read committed',
         }
     }
-}
 
 
 # Password validation

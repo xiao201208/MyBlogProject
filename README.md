@@ -55,6 +55,7 @@ $ git config --global user.email "email@email.com"
 $ git remote add origin git@github.com:gitname/repositoryname.git
 $ git remote -v
 $ git pull origin master --allow-unrelated-histories
+$ git clone https://github.com/gitname/repositoryname.git
 ```
 2. 准备 Python 
 此项目依赖的是 python3 的环境，自行搜索 python 环境安装过程。如果需要虚拟环境，也自行搜索。 命令记录
